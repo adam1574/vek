@@ -6,8 +6,26 @@ namespace vek
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("výpočet věku");
-            Console.WriteLine("_______________");
+            double vek;
+            double RokNarozeni;
+            double AktualniRok;
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("vypočet věku");
+                Console.Write("kdy ses narodil: ");
+                double.TryParse(Console.ReadLine(), out RokNarozeni);
+
+                AktualniRok = DateTime.Now.Year;
+                vek = AktualniRok - RokNarozeni;
+                Console.WriteLine($"tvuj věk je {vek}");
+
+                Console.ReadLine();
+            }
+           
+            
+            
+
 
         }
     }
