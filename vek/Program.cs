@@ -19,8 +19,32 @@ namespace vek
                 AktualniRok = DateTime.Now.Year;
                 vek = AktualniRok - RokNarozeni;
                 Console.WriteLine($"tvuj věk je {vek}");
-
-                Console.ReadLine();
+                if (vek > 80)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("jsi stařešina");
+                }
+                if (vek <= 80 & vek > 60)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("jsi postarší");
+                }
+                if (vek <= 60 & vek > 40)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("nejsi nejmladší");
+                }
+                if (vek <= 40 & vek > 20)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("jsi v nejlepším věku");
+                }
+                if (vek <= 20)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("jsi mlaďoch :D");
+                }
+                        Console.ReadLine();
             }
            
             
